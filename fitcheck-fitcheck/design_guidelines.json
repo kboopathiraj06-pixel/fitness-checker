@@ -1,0 +1,113 @@
+{
+  "app_name": "Chromatic Tone Match",
+  "personality": "6 Glass / Luxe DARK",
+  "personality_one_liner": "A cinematic, dark-themed personal color analysis experience that reveals face tone harmony and custom makeup swatches with absolute elegance.",
+  "color": {
+    "surface": "#121214",
+    "onSurface": "#F4F4F6",
+    "surfaceSecondary": "#1A1A1E",
+    "onSurfaceSecondary": "#D0D0D5",
+    "surfaceTertiary": "#26262B",
+    "onSurfaceTertiary": "#9E9EA5",
+    "surfaceInverse": "#FAFAFC",
+    "onSurfaceInverse": "#121214",
+    "brand": "#C5A880",
+    "brandPrimary": "#C5A880",
+    "onBrandPrimary": "#121214",
+    "brandSecondary": "#9E825E",
+    "onBrandSecondary": "#FAFAFC",
+    "brandTertiary": "#332B22",
+    "success": "#7FA688",
+    "onSuccess": "#121214",
+    "warning": "#D4A373",
+    "onWarning": "#121214",
+    "error": "#B85C5C",
+    "onError": "#121214",
+    "info": "#819AA6",
+    "onInfo": "#121214",
+    "border": "#2A2A30",
+    "borderStrong": "#44444F",
+    "divider": "#222228",
+    "muted": "#8E8E96",
+    "onBrand": "#121214"
+  },
+  "typography": {
+    "displayFontFamily": "Fraunces",
+    "textFontFamily": "Switzer",
+    "scale": {
+      "sm": 12,
+      "base": 14,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24
+    }
+  },
+  "spacing": {
+    "rule": "Generous vertical breathing room with cinematic margins, avoiding cramped layouts.",
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius_tokens": {
+    "sm": 6,
+    "md": 12,
+    "lg": 20,
+    "pill": 999
+  },
+  "shadow_tier": "0",
+  "navigation": "stack_only",
+  "icon_set": "Phosphor",
+  "glassmorphism": {
+    "enabled": true,
+    "do's": [
+      "Use frosted glass cards and headers for elevated surface layers",
+      "Apply translucent tinted base over dark atmospheric background"
+    ],
+    "dont's": [
+      "Never blur form inputs or text regions",
+      "Avoid low contrast text over glass"
+    ]
+  },
+  "platform_libraries": {
+    "glass": {
+      "ios": "expo-glass-effect",
+      "android": "expo-blur",
+      "low_end_android_fallback": "solid surfaceSecondary"
+    },
+    "image": "expo-image",
+    "blur": "expo-blur",
+    "bottom_sheet": "@gorhom/bottom-sheet",
+    "animation": "react-native-reanimated",
+    "gesture": "react-native-gesture-handler"
+  },
+  "screens": [
+    {
+      "name": "ColorMatchScreen",
+      "purpose": "Single immersive screen allowing camera capture, gallery picker, offline rule-based face tone analysis, match percentage, detected tone, color swatches, manual fallback, and reset.",
+      "states": {
+        "loading": "Cinematic scanning animation with progress percentage over the captured portrait.",
+        "empty": "Prompt card inviting user to snap a selfie or choose a gallery photo with clear glass styling.",
+        "error": "Readable error message with a retry button for camera or file permissions."
+      },
+      "layout": "Vertical single-column layout with fixed atmospheric dark background, glass header, hero image/capture preview frame, sticky bottom action bar, and scrollable results sheet containing match score, tone pill, palette swatches, and manual selector."
+    }
+  ],
+  "images": {
+    "hero_backdrop": {
+      "url": "https://images.unsplash.com/photo-1688494930420-694c13332f83?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dark": "https://images.unsplash.com/photo-1688494930420-694c13332f83?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Dark elegant gradient backdrop"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Build a single-screen dark elegant beauty color analysis app ('Chromatic Tone Match') that works entirely offline.",
+    "Support both camera capture and gallery photo picker with instant offline rule-based tone analysis.",
+    "Display match percentage (e.g. 92% Harmony), detected skin tone name, and recommended custom color swatches.",
+    "Include a manual tone selection fallback for user tuning.",
+    "Adhere strictly to the Glass / Luxe DARK personality (Fraunces + Switzer, obsidian background, champagne/gold accents, blur surfaces, weight cap 500 max, NO blue/purple/indigo banned hues)."
+  ]
+}
